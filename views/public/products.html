@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphone Madness</title>
+    <!-- // BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- //STYLE SHEET -->
+    <link rel="stylesheet" href="../../assets/styles/mainStyles.css">
+    <!-- //GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR ELEMENT -->
+    <nav id="navbar" class="navbar navbar-expand-lg pt-1 pb-0 border-bottom">
+        <div class="container-md flex-column">
+            <div class="row navbar-top-part">
+                <div class="col-0 col-sm-2"></div>
+                <div class="col-10 col-sm-8 d-flex justify-content-center">
+                    <a class="navbar-brand py-3 m-0" href="../../index.html"><img src="../../assets/images/crazyheadphoneslogo.png" alt="CrazyHeadphones Logo"></a>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-end">
+                    <div class="basket-box">
+                        <a href="../public/products.html" alt="shopping-basket"><img class="shopping-cart-img" src="../../assets/images/shopping-cart.png" alt="shopping-basket-icon"><span class="fw-bold text-black" id="bagQuantity">0</span></a>
+                    </div>
+                </div>
+            </div>
+          <button class="navbar-toggler mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link px-3 active" aria-current="page" href="../../index.html">All HEADPHONES</a>
+              <a class="nav-link px-3" href="#">WIRELESS HEADPHONES</a>
+              <a class="nav-link px-3" href="#">EARPHONES</a>
+              <a class="nav-link px-3" href="#">WIRED HEADPHONES</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section>
+          <div class="space-top-basket">
+              <h1 id="firstname"></h1>
+          </div>
+      </section>
+      <section>
+          <div class="container basket-container">
+              <div class="row basket-and-checkout-section">
+                  <div class="col-12 col-lg-9 basket-column px-3">
+                      <div class="d-flex first-row mb-3">
+                          <span class="pb-1 fs-6 fw-bold top-elements-cart">MY BAG</span>
+                        </div>
+                        <!-- first-row -->
+                        <div class="d-none d-md-block table-header-wrapper mb-3">
+                            <div class="row d-md-row table-header pb-2 ">
+                                <div class="col-2"></div>
+                                <div class="col-4 ">
+                                    <span class="grey-theme-color">Product details</span>  
+                                </div>
+                                <div class="col-2">
+                                    <span class="grey-theme-color">Quantity</span>           
+                                </div>
+                                <div class="col-2">
+                                    <span class="grey-theme-color">Price</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="grey-theme-color fw-bold">Total</span>
+                                </div>       
+                            </div>
+                        </div>
+                        <div class="products-in-cart">
+                            <!-- INSERT PRODUCTS HERE --> 
+                                                                                                                                          
+                        </div>
+                  </div>
+                  <div class="col-12 col-lg-3 checkout-column px-3">
+                      <div class="d-flex flex-column mb-3">
+                          <span class="pb-1 fs-6 fw-bold top-elements-cart">ORDER SUMMARY</span>
+                      </div>
+                      <div class="item-count-cost-row row mb-3 pt-1">
+                          <div class="col-6 d-flex justify-conent-start">
+                              <span class="grey-theme-color items-count fs-7"></span>
+                          </div>
+                          <div class="col-6 d-flex justify-content-end">
+                              <span class="total-cost grey-theme-color fs-7"></span>
+                          </div>
+                      </div>
+                      <div class="item-count-cost-row row mb-3 pt-1">
+                          <div class="col-6 d-flex justify-conent-start">
+                              <span class="grey-theme-color  fs-7">VAT 20%</span>
+                          </div>
+                          <div class="col-6 d-flex justify-content-end">
+                              <span class="total-vat grey-theme-color fs-7"></span>
+                          </div>
+                      </div>
+                      <div class="item-count-cost-row row mb-5 pt-1">
+                        <div class="col-6 d-flex justify-conent-start">
+                            <span class="fs-6 fw-bold text-black">TOTAL</span>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                            <span class="total-cost-2 fs-6 fw-bold text-black"></span>
+                        </div>
+                    </div>
+                    <div class="checkout-button btn btn-success d-block">Checkout Now</div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- PRODUCTS JS -->
+    <script src="../../assets/scripts/cartRender.js"></script>
+    <!-- BOOTSTRAP JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+    </body>
+    </html>
