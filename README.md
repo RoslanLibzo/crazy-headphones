@@ -1,6 +1,4 @@
-# MMT Digital Front-end Test
-
-Welcome to the MMT Digital Front-end test. This test will give you a chance to showcase your skills as an engineer. You have **24 hours** to complete the test. Once complete, we'll review your implementation, and if successful, you'll be invited to an interview where we'll talk through the implementation and the decisions you made along the way.
+# Front-End Test Completed in 3 Days
 
 Please read the entire document before you get started, to be sure of the requirements of the test:
 
